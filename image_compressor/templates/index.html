@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Compressor</title>
+</head>
+<body>
+    <h1>Upload Images to Compress</h1>
+    <p>Select your product images, choose a folder name, and the server will return
+       a ZIP archive of compressed JPEGs.</p>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <label for="folder">Folder name:</label>
+        <input type="text" id="folder" name="folder" required>
+        <br><br>
+        <label for="images">Select images:</label>
+        <input type="file" id="images" name="images" accept="image/*" multiple required>
+        <br><br>
+        <button type="submit">Compress</button>
+    </form>
+</body>
+</html>
